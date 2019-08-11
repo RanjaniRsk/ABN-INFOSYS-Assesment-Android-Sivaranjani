@@ -5,8 +5,8 @@ Mobile Test automation of an Android application
 - ToolSet Used - Appium , Maven , Java , TestNG , Log4j
 
 - Have the necessary configurations of the above toolset mentioned.
-- Downlaod the project and import to Eclipse
-- POM will have the project dependencies
+- Clone the project and import to Eclipse
+- pom.xml will have the project dependencies
 
 - How to run the Test ?
       - Right Click on testng.xml -> Run as -> TestNG Suite -> After the Test Run -> Refresh the project -> Report will be generated under test-output folder.
