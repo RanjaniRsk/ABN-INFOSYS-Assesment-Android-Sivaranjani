@@ -261,7 +261,7 @@ public void logStatusFail(String description, String expected ,String actual ,St
 	 System.out.println(expected);
 	 System.out.println(actual);
 	 System.out.println(testStatus);
-	log.error("Status Failed : "+ description+ "~~~~" +expected+ "~~~~" +actual + "~~~~" +testStatus);
+	log.error("Status Failed : "+ description+ "~~~~" +actual+ "~~~~" +expected + "~~~~" +testStatus);
 }
 	
 	public void logStatusPass(String description, String expected ,String actual ,String testStatus) {
@@ -269,7 +269,7 @@ public void logStatusFail(String description, String expected ,String actual ,St
 		System.out.println(expected);
 		System.out.println(actual);
 		System.out.println(testStatus);
-		log.info("Status Passed  : "+ description+ "~~~~" +expected+ "~~~~" +actual + "~~~~" +testStatus);
+		log.info("Status Passed  : "+ description+ "~~~~" +actual+ "~~~~" +expected + "~~~~" +testStatus);
 	}
 	
 
