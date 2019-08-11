@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="12858" started-at="2019-08-11T09:35:43Z" finished-at="2019-08-11T09:35:56Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="12858" started-at="2019-08-11T09:35:43Z" finished-at="2019-08-11T09:35:56Z">
+      <class name="com.anb.signin.Page_Test">
+        <test-method status="PASS" signature="validateAndroidReferencePageElements()[pri:0, instance:com.anb.signin.Page_Test@4562e04d]" name="validateAndroidReferencePageElements" duration-ms="12819" started-at="2019-08-11T09:35:44Z" finished-at="2019-08-11T09:35:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAndroidReferencePageElements -->
+      </class> <!-- com.anb.signin.Page_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
