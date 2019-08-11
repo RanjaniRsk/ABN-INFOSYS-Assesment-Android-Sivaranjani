@@ -12,18 +12,22 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 
 import com.anb.androidreference.Page_Helper;
 import com.anb.utilities.PropReader;
 
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidDriver;	
 
 
 
-public class Base_Test {
+public class Base_Test   {
 	
 	private static Logger log = LogManager.getLogger(Page_Helper.class.getName());
 	String folder_name;
@@ -32,9 +36,8 @@ public class Base_Test {
 
 	public AndroidDriver<MobileElement> driver;
 	
-	@BeforeClass
 	public void setup() throws IOException {
-		   System.out.println("Inside Before Method");
+		   System.out.println("Inside Before Class");
 		    PropReader.GetInstance(); 
 	        File app = new File(PropReader.getapkFilePath()); 
 	        DesiredCapabilities cap = new DesiredCapabilities();	        
@@ -45,8 +48,6 @@ public class Base_Test {
 			cap.setCapability("app", app.getAbsolutePath());
 			cap.setCapability("noReset",PropReader.getNoReset());
 			driver = new AndroidDriver<MobileElement>(new URL(PropReader.getURL()), cap);	
-			
-			
 		}
 	
   
@@ -75,13 +76,14 @@ public class Base_Test {
 			log.info("Status Passed  : "+ description+ "~~~~" +actual+ "~~~~" +expected + "~~~~" +testStatus);
 		}
 		
-		@AfterClass
+		@AfterTest
 		public void tearDown() {
 			driver.quit();
 			
-		}	
-	
-	
+		}
 
+
+
+		
 
 }
