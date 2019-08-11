@@ -15,7 +15,6 @@ public class Operations extends Base_Test{
 	
 	public MobileElement locateElement(String XPathString, LocatorType locateBy) {
 		System.out.println("Locating Element " + XPathString);
-		System.out.println(driver);
 		try {
 			switch (locateBy) {
 			case ID:
