@@ -38,7 +38,6 @@ public class Page_Helper extends Operations {
 				logStatusFail("Validate the Settings Icon", "Settings Icon Should be displayed",
 						"Settings Icon button is not displayed", "Failed");
 			}
-			Thread.sleep(5000);
 			if (getElementPresence(Page_Elements.getPageInstance().getXPath_lbl_ByText(Page_Elements.HELLO_WORLD_TXT),
 					LocatorType.XPATH)) {
 				logStatusPass("Validate Hello World text", "Hello World text should be displayed",
