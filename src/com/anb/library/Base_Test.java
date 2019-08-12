@@ -12,13 +12,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-
 import com.anb.androidreference.Page_Helper;
 import com.anb.utilities.PropReader;
 
@@ -60,7 +54,7 @@ public class Base_Test   {
 		 new File(folder_name).mkdir();
 		 String file_name=df.format(new Date())+Page_Helper.class.getName()+".png";
 		 FileHandler.copy(f, new File(folder_name + "/" + file_name));
-		 System.out.println("Screenshot is Captured");
+		 System.out.println("*********Screenshot is Captured");
 		 System.out.println(description);
 		 System.out.println(expected);
 		 System.out.println(actual);

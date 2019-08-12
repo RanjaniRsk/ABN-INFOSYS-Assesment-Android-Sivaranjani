@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.openintents.cucumber</groupId>
-  <artifactId>IOShopping</artifactId>
+  <groupId>com.anb.androidreference</groupId>
+  <artifactId>ABN_AndroidReference_INFOSYS</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>IOShopping</name>
+  <name>AndroidRefernce</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -33,23 +33,10 @@
     <artifactId>selenium-java</artifactId>
     <version>4.0.0-alpha-2</version>
 </dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+
   
-    <!-- https://mvnrepository.com/artifact/junit/junit -->
-<dependency>
-    <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>4.12</version>
-    <scope>test</scope>
-</dependency>
-
-
-<!-- https://mvnrepository.com/artifact/junit/junit --> 
-<dependency>
-   <groupId>junit</groupId>
-   <artifactId>junit</artifactId>
-   <version>4.11</version>
-</dependency>
-
 <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
@@ -57,9 +44,6 @@
         <scope>compile</scope>
     </dependency>
     <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
-
-
-
-  
+ 
   </dependencies>
 </project>

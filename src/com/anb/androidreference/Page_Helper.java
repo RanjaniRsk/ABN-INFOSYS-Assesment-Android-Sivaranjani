@@ -29,6 +29,8 @@ public class Page_Helper extends Operations {
 					logStatusPass("Validate if Setting is displayed tapping settings Icon",
 							"Settings should be displayed on tapping settings icon",
 							"Setting is displayed on tapping Settings Icon", "Passed");
+					click(Page_Elements.getPageInstance().getXPath_lbl_ByText(Page_Elements.SETTINGS_TXT),
+							LocatorType.XPATH);
 				} else {
 					logStatusFail("Validate if Setting is displayed tapping settings Icon",
 							"Settings should be displayed on tapping settings icon",
@@ -38,6 +40,7 @@ public class Page_Helper extends Operations {
 				logStatusFail("Validate the Settings Icon", "Settings Icon Should be displayed",
 						"Settings Icon button is not displayed", "Failed");
 			}
+			
 			if (getElementPresence(Page_Elements.getPageInstance().getXPath_lbl_ByText(Page_Elements.HELLO_WORLD_TXT),
 					LocatorType.XPATH)) {
 				logStatusPass("Validate Hello World text", "Hello World text should be displayed",
@@ -47,6 +50,7 @@ public class Page_Helper extends Operations {
 				logStatusFail("Validate Hello World text", "Hello World text should be displayed",
 						"Hello World text is not displayed", "Failed");
 			}
+			
 			if (getElementPresence(Page_Elements.MAIL_ICON_ID, LocatorType.ID)) {
 				logStatusPass("Validate if MailBox Icon is displayed", "MailBox icon should be displayed",
 						"MailBox icon is displayed", "Passed");
@@ -71,7 +75,7 @@ public class Page_Helper extends Operations {
 
 		} else {
 			logStatusFail("Validate Android Reference page display ",
-					"User should be displayed with Android Reference Page", "Android Reference is displayed", "Failed");
+					"User should be displayed with Android Reference Page", "Android Reference is not displayed", "Failed");
 
 		}
 
